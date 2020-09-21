@@ -2,6 +2,7 @@
 
 ## Development Notes
 
+### Attempt 1
 * DEV environment consists of Git Hub Desktop, Visual Studio Code, Powershell.
 * Making use of the existing `dotnet` project templates
     * `dotnet new gitignore`
@@ -14,3 +15,6 @@
     * Licensed for usage without attribution in commercial prodcuts
 
 * Well, using the template didn't work. Deleting and starting from a slight more simple basis.
+
+### Attempt 2
+* Setup a default angular page, and an empty webapi application and ensure that both run

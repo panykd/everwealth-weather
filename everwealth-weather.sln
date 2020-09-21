@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A06B41D0-1FF4-4A6D-9135-48FBB404BC0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "restapi-dotnet", "src\restapi-dotnet\restapi-dotnet.csproj", "{4A61327E-B661-45BC-BF04-65C4043F27D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,5 +18,22 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Debug|x64.Build.0 = Debug|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Debug|x86.Build.0 = Debug|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Release|x64.ActiveCfg = Release|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Release|x64.Build.0 = Release|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Release|x86.ActiveCfg = Release|Any CPU
+		{4A61327E-B661-45BC-BF04-65C4043F27D5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A61327E-B661-45BC-BF04-65C4043F27D5} = {A06B41D0-1FF4-4A6D-9135-48FBB404BC0B}
 	EndGlobalSection
 EndGlobal
