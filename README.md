@@ -12,3 +12,5 @@
 * While performing intallation of `node.js` and `chocolatey` tools and dependencies. Found the following image to use a background
     * https://pixabay.com/photos/cloudscape-clouds-sky-cloudy-sky-5563794/
     * Licensed for usage without attribution in commercial prodcuts
+
+* Well, using the template didn't work. Deleting and starting from a slight more simple basis.
