@@ -18,3 +18,7 @@
 
 ### Attempt 2
 * Setup a default angular page, and an empty webapi application and ensure that both run
+
+* Created a new angular component to have the page information that was request
+
+* Created a VERY basic `template` to hold the information, with data-binding driven from the component
