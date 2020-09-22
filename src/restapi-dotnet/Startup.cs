@@ -38,6 +38,11 @@ namespace restapi_dotnet
 
             app.UseHttpsRedirection();
 
+            app.UseCors(cors => cors
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+            );
+
             app.UseRouting();
 
             app.UseAuthorization();

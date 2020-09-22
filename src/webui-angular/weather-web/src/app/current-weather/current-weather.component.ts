@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
+import { Observable } from 'rxjs';
+import { share } from 'rxjs/operators';
 
 interface CurrentWeather {
   Timestamp: string;
@@ -21,7 +23,6 @@ const initial : CurrentWeather = {
   UVIndex: 0
 };
 
-
 @Component({
   selector: 'app-current-weather',
   templateUrl: './current-weather.component.html',
@@ -29,14 +30,13 @@ const initial : CurrentWeather = {
 })
 export class CurrentWeatherComponent implements OnInit {
 
-  currentWeather = {
-    ...initial,
-    UVIndexRating: "Low"
-  };
+  //currentWeather : CurrentWeather = initial;
+  currentWeather : Observable<CurrentWeather> = new Observable<CurrentWeather>();
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-  }
 
+    this.currentWeather = this.http.get<CurrentWeather>("https://localhost:5001/weather/brisbane").pipe(share());
+  }
 }

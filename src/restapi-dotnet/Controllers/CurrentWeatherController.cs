@@ -28,7 +28,7 @@ namespace restapi_dotnet.Controllers
 
             return new CurrentWeather
             {
-                Date = DateTime.UtcNow,
+                Timestamp = DateTime.UtcNow,
                 
                 Summary = Summaries[rng.Next(Summaries.Length)],
 

@@ -4,7 +4,7 @@ namespace restapi_dotnet.Models
 {
     public class CurrentWeather
     {        
-        public DateTime Date { get; set; }
+        public DateTime Timestamp { get; set; }
 
         public string Summary { get; set; }
 

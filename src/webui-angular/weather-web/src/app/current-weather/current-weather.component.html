@@ -1,54 +1,17 @@
 
+<!-- <div *ngIf="currentWeather$ | async as value; else loading"> -->
 <div>
-    <div>
-      <span>{{currentWeather.Temperature}}</span>
-      <span></span>
-    </div>
-    <div>
-      <div>
-        <span>{{currentWeather.Location}}</span>
-      </div>
-      <div>
-        <span>{{currentWeather.Timestamp}}</span>
-      </div>
-    </div>
-    <div>
-      <span>{{currentWeather.Summary}}</span>
-    </div>
-  </div>
-  
   <div>
-    <div>
-      <div>
-        <span>{{currentWeather.Humidity}}</span>
-        <span>%</span>
-      </div>
-      <div>
-        <span>Humidity</span>
-      </div>
-    <div>
-  
-    <div>
-      <div>
-        <span>{{currentWeather.Visibility}}</span>
-        <span>mi</span>
-      </div>
-      <div>
-        <span>Visibility</span>
-      </div>
-    <div>
-  
-      <div>
-        <div>
-          <span>{{currentWeather.UVIndexRating}}</span> 
-          <span>{{currentWeather.UVIndex}}</span>
-        </div>
-        <div>
-          <span>UV Index</span>
-        </div>
-      <div>
+    <span>{{(currentWeather | async)?.Temperature}}</span>
+    <span>degC</span>
+  </div>
+  <div>
+    <code>
+      {{(currentWeather | async)}}
+    </code>
   </div>
 </div>
-<div>
+<!-- <ng-template #loading>Loading Weather Data...</ng-template> -->
+<!-- <div>
     <img src="../../assets/cloudscape-5563794_1920.jpg">
-</div>
+</div> -->
